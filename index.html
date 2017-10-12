@@ -109,7 +109,7 @@
                                    <div>
                                        <p class="special_in">重量：</p>
                                        <div>
-                                           <input type="text" value="0.50" name="ds[0].we" jsdo="num">
+                                           <input type="text" value="0.50" name="ds[0].we" class="zl" jsdo="wenum">
                                            <span>kg</span>
                                        </div>
                                    </div>
@@ -187,7 +187,7 @@
                                             <!--<span data-toaddr="$!{par.outToArea_cityName}"><b onclick="delToAddr(this)" class="closetoaddr"></b> </span>-->
                                             <input type="hidden" value="" name="t1">
                                             <input type="hidden" value="" name="t1c">
-                                            <input type="hidden" value="" name="t1cc">
+                                            <input type="hidden" value="" name="t2">
                                         </div>
                                     </div>
                                 </li>
@@ -221,7 +221,7 @@
                                     <div>
                                         <p>单箱重量：</p>
                                         <div>
-                                            <input type="text"value="500" name="ds[0].we" jsdo='num'>
+                                            <input type="text"value="200.00" name="ds[0].we" style="width: 50px;" jsdo='wenum'>
                                             <span>g</span>
                                         </div>
                                     </div>
@@ -237,13 +237,14 @@
                                     <label style="margin-right: 15px"><input name="classId" type="radio" value="8"  style="width: 15px;height: 15px;vertical-align: top"/><p>粉末(不接白色) </p></label>
                                     <label style="margin-right: 15px"><input name="classId" type="radio" value="9"  style="width: 15px;height: 15px;vertical-align: top"/><p>膏状物 </p></label>
                                 </li>
+                                    <input name="minTime" type="hidden" value="0"  checked="checked"/>
                                 <li style="margin-bottom: 0">
                                     <p style="margin-left: 55px">时效范围：</p>
-                                    <label style="margin-right: 10px"><input name="time" type="radio" value=""  style="width: 15px;height: 15px;vertical-align: top" checked="checked"/><p>不限</p></label>
-                                    <label style="margin-right: 15px"><input name="time" type="radio" value="15"  style="width: 15px;height: 15px;vertical-align: top"/><p>15工作日以内</p></label>
-                                    <label style="margin-right: 15px"><input name="time" type="radio" value="20"  style="width: 15px;height: 15px;vertical-align: top"/><p>20工作日以内</p></label>
-                                    <label style="margin-right: 15px"><input name="time" type="radio" value="30"  style="width: 15px;height: 15px;vertical-align: top"/><p>30工作日以内</p></label>
-                                    <label style="margin-right: 15px"><input class="personTime" name="time" type="radio" value=""  style="width: 15px;height: 15px;vertical-align: top"/><input jsdo="persontime" style="width: 35px;"
+                                    <label style="margin-right: 10px"><input name="maxTime" type="radio" value=""  style="width: 15px;height: 15px;vertical-align: top" checked="checked"/><p>不限</p></label>
+                                    <label style="margin-right: 15px"><input name="maxTime" type="radio" value="15"  style="width: 15px;height: 15px;vertical-align: top"/><p>15工作日以内</p></label>
+                                    <label style="margin-right: 15px"><input name="maxTime" type="radio" value="20"  style="width: 15px;height: 15px;vertical-align: top"/><p>20工作日以内</p></label>
+                                    <label style="margin-right: 15px"><input name="maxTime" type="radio" value="30"  style="width: 15px;height: 15px;vertical-align: top"/><p>30工作日以内</p></label>
+                                    <label style="margin-right: 15px"><input class="personTime" name="maxTime" type="radio" value=""  style="width: 15px;height: 15px;vertical-align: top"/><input jsdo="persontime" style="width: 35px;"
                                             type="text">&nbsp-&nbsp<input jsdo="persontime" type="text" style="width: 35px;"><p>工作日</p></label>
                                 </li>
                                 <li style="margin-bottom: 0">
@@ -311,14 +312,14 @@
                                     <div>
                                         <p>重量：</p>
                                         <div>
-                                            <input type="text" value="0.50" name="ds[0].we" jsdo="num">
+                                            <input type="text" value="0.50" name="ds[0].we" class="zl" jsdo="wenum">
                                             <span>kg</span>
                                         </div>
                                     </div>
                                     <div>
                                         <p>同尺寸重:</p>
                                         <div style="border: none">
-                                            <input type="text" style="border: 1px solid gray;width: 60px;" jsdo="num" name="ds[0].q" value="1">
+                                            <input type="text" style="border: 1px solid gray;width: 60px;" jsdo="num"  name="ds[0].q" value="1">
                                             <p>箱</p>
                                         </div>
                                     </div>
@@ -348,7 +349,6 @@
                                     <label style="margin-right: 15px"><input name="specify" type="radio"   style="width: 15px;height: 15px;vertical-align: top" value="3"/><p>空派</p></label>
                                     <label style="margin-right: 15px"><input name="specify" type="radio"   style="width: 15px;height: 15px;vertical-align: top" value="4"/><p>海运</p></label>
                                     <label style="margin-right: 15px"><input name="specify" type="radio"   style="width: 15px;height: 15px;vertical-align: top" value="5"/><p>铁路 </p></label>
-
                                     <label style="margin-right: 15px"><input name="specify" type="radio"   style="width: 15px;height: 15px;vertical-align: top" value="6"/><p>中港 </p></label>
                                 </li>
 

@@ -386,7 +386,7 @@ $(function(){
     $("a[jsdo='resetOut']").on("click",function(){
         var parent=$(this).parents("ul");
         $("#BusinessForm input[jsdo='wenum']").val('1.00');
-        $("#BusinessForm input[name='ds[0].we']").val('1');
+        $("#BusinessForm .zl").val('0.50');
         $("#BusinessForm input[name='ds[0].q']").val('1');
 
     });
@@ -458,6 +458,7 @@ $(function(){
     $("a[jsdo='resetOutFba']").on("click",function(){
         var parent=$(this).parents("ul");
         $("#FbaForm input[jsdo='wenum']").val('1.00');
+        $("#FbaForm .zl").val('0.50');
         $("#FbaForm input[jsdo='num']").val('1');
     });
 
@@ -532,6 +533,11 @@ $(function(){
     var countryInfosC=[];
     var countryInfos=[];
 
+    $("[jsdo='persontime']").focus(function(){
+        $(".personTime").click();;
+    })
+
+
     $("[jsdo='queryOline']").click(function(){
          countryInfos=[];
          countryInfosChis=[];
@@ -561,7 +567,7 @@ $(function(){
         }
         $(".toaddrs").find("[name='t1']").val(countryInfosChis.join(","))
         $(".toaddrs").find("[name='t1c']").val(countryInfosEngs.join(","))
-        $(".toaddrs").find("[name='t1cc']").val(countryInfosC.join(","))
+        $(".toaddrs").find("[name='t2']").val(countryInfosC.join(","))
 
         var parent = $(this).parents("ul");
         var high = $("#OnlineForm input[name='ds[0].h']:eq(0)").val();
@@ -591,6 +597,17 @@ $(function(){
             return false;
         }
 
+        if($("[jsdo='persontime']").eq(0).val()>$("[jsdo='persontime']").eq(1).val()){
+            $(".personTime").val($("[jsdo='persontime']").eq(0).val())
+            $("[name='minTime']").val($("[jsdo='persontime']").eq(1).val())
+        }else{
+            $(".personTime").val($("[jsdo='persontime']").eq(1).val())
+            $("[name='minTime']").val($("[jsdo='persontime']").eq(0).val())
+        }
+        if(!$(".personTime").is(':checked')){
+            $("[name='minTime']").val(0)
+        }
+
         var postdata = $.formHelper.getObject($('#OnlineForm').serialize());
 
 
@@ -603,7 +620,7 @@ $(function(){
         base64data = replaceAll(base64data, "+", "-01");
         base64data = replaceAll(base64data, "/", "-02");
 
-        window.location.href=wgurl+"packExpressYz.html?base64data="+base64data;
+        window.location.href=wgurl+"2.0/packExpressYz.html?base64data="+base64data;
 
 
     })
@@ -612,18 +629,14 @@ $(function(){
     $("[jsdo='persontime']").focus(function(){
         $(".personTime").attr("checked","checked")
     })
-    $("[jsdo='persontime']").blur(function(){
-        if($("[jsdo='persontime']").eq(0)>$("[jsdo='persontime']").eq(1)){
-           $(".personTime").val($("[jsdo='persontime']").eq(0))
-        }else{
-            $(".personTime").val($("[jsdo='persontime']").eq(1))
-        }
-    })
+
+
+
     
     $("[jsdo='resetOline']").click(function(){
        
         $("#OnlineForm input[jsdo='wenum']").val('1.00');
-        $("#OnlineForm input[jsdo='num']").val('500');
+        $("#OnlineForm input[name='ds[0].we']").val('200.00');
         
     })
 
