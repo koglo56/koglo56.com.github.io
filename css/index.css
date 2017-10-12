@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+.header{
+    width: 100%;
+    height: 960px;
+    background-image: url('../images/banner.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.header .header_top {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    height: 90px;
+    /*line-height: 90px;*/
+}
+.header .header_top p{
+    margin-left: 20px;
+    vertical-align: bottom;
+    display: inline-block;
+    color: white;
+    font-family:”微软雅黑”;
+    font-size: 37px;
+
+}
+
+.header .header_box{
+    width: 800px;
+    /*height: 450px;*/
+    min-height: 450px;
+    min-width: 800px;
+    border: 2px solid #1d89c2;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 218px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.header .header_box .box_type{
+    width: 100%;
+    overflow: hidden;
+}
+.header .header_box .box_type>div{
+    width: 50%;
+    float: left;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #1d89c2;
+    position: relative;
+}
+.header .header_box .box_type>div img{
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+}
+.header .header_box .box_type>div p {
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    font-family:”微软雅黑”;
+    z-index:3;
+    left: 50%;
+    top: 50%;
+    margin-top: -19px;
+    margin-left: -54px;
+}
+.header_box .box_content {
+    width: 100%;
+    height: 100%;
+
+}
+.header_box .box_content>div{
+    width: 100%;
+    height: 100%;
+
+}
+/*查价寄件*/
+.header_box .box_content .type_send {
+    width: 100%;
+    height: 100%;
+}
+.header_box .box_content .type_send .type_send_header{
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.header_box .box_content .type_send .type_send_header ul{
+    list-style: none;
+}
+.header_box .box_content .type_send .type_send_header ul li{
+    float: left;
+    text-align: center;
+}
+.header_box .box_content .type_send .type_send_header ul li a {
+    display: inline-block;
+    height: 36px;
+    text-decoration:none;
+    width: 106px;
+    line-height: 36px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header_box .box_content .type_send .type_send_header ul li a.index {
+    color: white;
+    background-color: #1d89c2;
+    border-radius: 3px;
+}
+.header_box .box_content .type_send .type_send_content{
+    width: 100%;
+    height: 100%;
+}
+.header_box .box_content .type_send .type_send_content label p{
+    font-weight: 100;
+}
+/*商务快递*/
+.header_box .box_content .type_send .type_send_content1{
+    width: 100%;
+    height: 100%;
+
+}
+.header_box .box_content .type_send .type_send_content1 ul{
+    list-style: none;
+    margin-top: 30px;
+}
+.header_box .box_content .type_send .type_send_content1 ul li{
+    /*text-align: center;*/
+    margin-bottom: 10px;
+}
+.header_box .box_content .type_send .type_send_content1 ul li p{
+     display: inline-block;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    color: #333;
+ }
+.header_box .box_content .type_send .type_send_content1 ul li div{
+    display: inline-block;
+
+}
+.header_box .box_content .type_send .type_send_content1 ul li div input{
+    width: 257px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border:1px solid darkgray;
+}
+
+.header_box .box_content .type_send .type_send_content1 ul .size div{
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 2px;
+}
+.header_box .box_content .type_send .type_send_content1 ul .size div input{
+    width: 40px;
+    padding-left: 5px;
+    height: 27px;
+    border: none;
+}
+.header_box .box_content .type_send .type_send_content1 ul .size div div{
+    border: 1px solid darkgray;
+}
+.header_box .box_content .type_send .type_send_content1 ul .size div span{
+    width: 25px;
+    float: right;
+    height: 27px;
+    background-color: #eeeeee;
+    vertical-align: top;
+    line-height: 27px;
+    border: none;
+    color: gray;
+    display: inline-block;
+    text-align: center;
+}
+.header_box .box_content .type_send .type_send_content1 ul .button1{
+    text-align: center;
+}
+.header_box .box_content .type_send .type_send_content1 ul .button1 span{
+    background-color: #6583fb;
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header_box .box_content .type_send  ul li div input::-webkit-input-placeholder{
+    color: darkgray;
+}
+/*电商小包*/
+.header_box .box_content .type_send .type_send_content2{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.header_box .box_content .type_send .type_send_content2 label p{
+    display: inline-block;
+    font-family: 微软雅黑;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    margin-left: 3px;
+    cursor:pointer ;
+}
+.header_box .box_content .type_send .type_send_content2 label input{
+    margin-left: 3px;
+}
+.header_box .box_content .type_send .type_send_content2 ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.header_box .box_content .type_send .type_send_content2 ul li p{
+    display: inline-block;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    color: #333;
+}
+.header_box .box_content .type_send .type_send_content2 ul li{
+    margin-bottom: 10px;
+    height: 30px;
+}
+.header_box .box_content .type_send .type_send_content2 ul li div{
+    display: inline-block;
+}
+.header_box .box_content .type_send .type_send_content2 ul li div input {
+    width: 257px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+.header_box .box_content .type_send .type_send_content2 ul .size div{
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 2px;
+}
+.header_box .box_content .type_send .type_send_content2 ul .size div input{
+    width: 40px;
+    padding-left: 5px;
+    border: none;
+    height: 27px;
+}
+.header_box .box_content .type_send .type_send_content2 ul .size div div{
+    border: 1px solid darkgray;
+
+}
+.header_box .box_content .type_send .removenum {
+    color: white;
+    padding: 3px 5px;
+    font-size: 9px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    line-height: 20px;
+}
+
+.header_box .box_content .type_send .type_send_content2 ul .size div span{
+    width: 25px;
+    float: right;
+    height:27px;
+    background-color: #eeeeee;
+    vertical-align: top;
+    line-height: 27px;
+    border: none;
+    color: darkgray;
+    display: inline-block;
+    text-align: center;
+}
+.header_box .box_content .type_send .type_send_content2 ul .button2 span{
+    background-color: #6583fb;
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*FBA*/
+.header_box .box_content .type_send .type_send_content3{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.header_box .box_content .type_send .type_send_content3 label p {
+    display: inline-block;
+    font-family: 微软雅黑;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    margin-left: 3px;
+    cursor:pointer ;
+}
+
+.header_box .box_content .type_send .type_send_content3 ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.header_box .box_content .type_send .type_send_content3 ul li {
+    margin-bottom: 10px;
+    height: 30px;
+}
+.header_box .box_content .type_send .type_send_content3 ul li p {
+    display: inline-block;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    color: #333;
+}
+.header_box .box_content .type_send .type_send_content3 ul li div{
+    display: inline-block;
+
+}
+.header_box .box_content .type_send .type_send_content3 ul li div input{
+    width: 257px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border:1px solid darkgray;
+}
+.header_box .box_content .type_send .type_send_content3 ul .size div{
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 2px;
+}
+.header_box .box_content .type_send .type_send_content3 ul .size div input{
+    width: 40px;
+    padding-left: 5px;
+    border: none;
+    height: 27px;
+}
+.header_box .box_content .type_send .type_send_content3 ul .size div div{
+    border: 1px solid darkgray;
+}
+.header_box .box_content .type_send .type_send_content3 ul .size div span{
+    width: 25px;
+    float: right;
+    height:27px;
+    background-color: #EEEEEE;
+    vertical-align: top;
+    line-height:27px;
+    border: none;
+    color: darkgray;
+    display: inline-block;
+    text-align: center;
+}
+.header_box .box_content .type_send .type_send_content3 ul .button3{
+    text-align: center;
+}
+.header_box .box_content .type_send .type_send_content3 ul .button3 span{
+    background-color: #6583fb;
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.header_box .box_content .type_send .type_send_content3 ul .yellowFont p {
+    color: #ca6b33;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*单号查询*/
+.header_box .box_content .type_query{
+    text-align: center;
+
+}
+.header_box .box_content .type_query input{
+    height: 40px;
+    width: 450px;
+    display: inline-block;
+    margin-top: 100px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.header_box .box_content .type_query input::-webkit-input-placeholder{
+    font-size: 18px;
+}
+
+.header_box .box_content .type_query span{
+    background-color: #1d89c2;
+    margin-top: 100px;
+    color: white;
+    height: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.center{
+    width: 100%;
+    margin-top: 40px;
+
+}
+.center .center_font{
+    width: 100%;
+    text-align: center;
+
+}
+.center .center_font>div{
+    width: 100px;
+    height: 1px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    margin-bottom: 11px;
+}
+.center .center_font>p{
+    font-size: 30px;
+    display: inline-block;
+    color:#ABABAB;
+    font-family:”微软雅黑”;
+    margin: 0 26px;
+}
+.center_point{
+    margin-top: 60px;
+    /*padding: 0 150px;*/
+}
+.center_point .container{
+    margin: 0 auto;
+    width: 70%;
+}
+.center_point ul{
+    list-style: none;
+}
+.center_point ul li{
+    float: left;
+    text-align: center;
+
+}
+.center_point ul li div{
+    width: 100%;
+    text-align: center;
+}
+.center_point ul li div p{
+    margin-top: 20px;
+    font-size:15px;
+    line-height: 20px;
+    font-family:”微软雅黑”;
+    color: #8E8E8E;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.center_point ul li div span{
+    color: #8E8E8E;
+    border: 2px solid gray;
+    font-size:17px;
+    padding: 5px 15px ;
+    border-radius: 15px;
+}
+
+.botton{
+    margin-top: 84px;
+    width: 100%;
+    text-align: center;
+}
+.botton .botton_present{
+    width: 1177px;
+    position: relative;
+    margin: 0 auto;
+}
+.botton .botton_present p{
+    position: absolute;
+    top: 208px;
+    width: 450px;
+    right: 0;
+    color: #8E8E8E;
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
+}
+
+
+
+.botton .botton_Copyright{
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    background-color: #535353;
+    line-height: 80px;
+
+}
+
+.botton .botton_Copyright p{
+    color: #EAEAEA;
+    font-size: 16px
+}
+
+
+
+/*去除输入框右边的上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+/*国际快递多选*/
+.info_express_table> table > thead td{
+    padding: 8px 55px;
+    padding: 8px 55px;
+}
+.toaddrs{
+
+    height: auto;
+    display: inline-block;
+    vertical-align: text-top;
+}
+.toaddrs span{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    height: 30px;
+    display: inline-block;
+    background: #efefef;
+    line-height: 30px;
+    padding: 0 8px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #adadad;
+}
+.toaddrs span:hover{
+    color: #696969;
+    border: 1px outset #fff;
+}
+
+.toaddrs span .closetoaddr{
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    background: #cacaca;
+    text-align: center;
+    color: #777777;
+    border-radius: 10px;
+}
+.toaddrs span:hover .closetoaddr{
+    background: red;
+    color: #fff;
+}
+.sv2 .goods_size input{
+    padding: 0px 6px;
+}
+
+
+/*输入框默认字体改变*/
+input{
+    color: #333;
+}
+#outfromTextNew{
+    color: #333;
+    font-weight: normal;
+}
+#BusinessForm #outfromTextNew::-webkit-input-placeholder{
+    color: #B0B0B0;
+}
+#outToTextNew{
+    color: #333;
+    font-weight: normal;
+}
+#BusinessForm #outToTextNew::-webkit-input-placeholder{
+    color: #B0B0B0;
+}
+#outfromTextNew2{
+    color: #333;
+    font-weight: normal;
+}
+#OnlineForm #outfromTextNew2::-webkit-input-placeholder{
+    color: #B0B0B0;
+}
+#outfromTextNew3{
+    color: #333;
+    font-weight: normal;
+}
+#FbaForm #outfromTextNew3::-webkit-input-placeholder{
+    color: #B0B0B0;
+}
+#outToTextNew3{
+    color: #333;
+    font-weight: normal;
+}
+#FbaForm #outToTextNew3::-webkit-input-placeholder{
+    color: #B0B0B0;
+}
