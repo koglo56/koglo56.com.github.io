@@ -38,7 +38,7 @@ function replaceAll(str,a,b)
 
 var index1=0;
 var index3=0;
-var wgurl="http://t.huodull.com/";
+var wgurl="https://t.huodull.com/";
 function clickme(obj){
     index1--;
     obj.parent().remove();
